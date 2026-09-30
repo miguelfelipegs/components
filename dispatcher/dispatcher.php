@@ -4,6 +4,8 @@ function dispatcher($rota){
     echo "5.Dispatcher decidiu qual controller deve executar.<br>";
     if ($rota === "/usuarios"){
         usuarioController();
+    } elseif ($rota === "/produtos"){
+        produtoController();
     }
 
 }
